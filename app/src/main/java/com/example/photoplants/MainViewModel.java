@@ -16,8 +16,10 @@ public class MainViewModel extends AndroidViewModel {
         super(application);
     }
 
+    //搜索界面的展示数据
     public MutableLiveData<List<SearchHistory>> toBeShownInSearchResults = new MutableLiveData<>();
 
+    //存储数据库中当前所有的history
     public MutableLiveData<List<SearchHistory>> queryHistory = new MutableLiveData<>();
 
 }

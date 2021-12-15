@@ -51,7 +51,7 @@ public class HistoryFragment extends Fragment{
                     @Override
                     public void run() {
                         getActivity().getSupportFragmentManager().beginTransaction()
-                                .replace(R.id.container, DetailsFragment.newInstance(history.getPlantID())).commitNow();
+                                .replace(R.id.container, DetailsFragment.newInstance(history.getPlantID(),2)).commitNow();
                     }
                 });
             }
@@ -88,5 +88,4 @@ public class HistoryFragment extends Fragment{
 
         return binding.getRoot();
     }
-
 }
